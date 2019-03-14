@@ -4,15 +4,15 @@
       <h1 class="behind-text">About Me</h1>
       <div class="side-card">
         <div class="text">
-          <h1 class="rellax" :data-rellax-speed="1 * rellaxMulti">Hello</h1>
-          <h1 class="rellax" :data-rellax-speed="1 * rellaxMulti">There</h1>
+          <h1>Hello</h1>
+          <h1>There</h1>
         </div>  
-        <div class="particles rellax" :data-rellax-speed="-3 * rellaxMulti">
+        <div class="particles">
             <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#FFC300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#5a04a2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18L12 4z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#df0077" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
           </div>
-        <div class="image-holder rellax" :data-rellax-speed="-6 * rellaxMulti">
+        <div class="image-holder">
           <div class="background"></div>
           <img  :src="require('~/assets/Images/about.png')" :data-src="require('~/assets/Images/about.png')">
           
@@ -52,17 +52,16 @@ import charming from 'charming';
 export default {
   head() {
     return {
-      title: 'About Me • Réjon Taylor-Foster',
+      title: 'About Me ✦ Réjon Taylor-Foster',
       meta: [
-        {hid: 'description', name: 'description', content: 'All about Réjon Taylor-Foster'}
+        {hid: 'description', name: 'description', content: 'If I could give you an elevator pitch on myself, this would be it.'}
       ]
     }
   },
   data() {
     return {
       animeStore: {},
-      showScrollUp: false,
-      rellaxMulti: window.innerWidth <= 786 ? 1 : 0
+      showScrollUp: false
     }
   },
   methods: {
@@ -84,8 +83,6 @@ export default {
     window.onscroll = () => {
         this.showScrollUp = window.scrollY > window.innerHeight; 
     }
-
-    this.rellaxMulti = window.innerWidth <= 786 ? 1 : 0;
 
     let page = this.$el.querySelector('.about');
     let behindText = page.querySelector('.behind-text');

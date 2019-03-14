@@ -11,7 +11,6 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_swplugin_767f597e from 'nuxt_plugin_swplugin_767f597e' // Source: ./sw.plugin.js (mode: 'client')
 import nuxt_plugin_nuxticons_58181203 from 'nuxt_plugin_nuxticons_58181203' // Source: ./nuxt-icons.js (mode: 'all')
 import nuxt_plugin_aos_5e4622cf from 'nuxt_plugin_aos_5e4622cf' // Source: ..\\plugins\\aos (mode: 'client')
 import nuxt_plugin_anime_789b8b0e from 'nuxt_plugin_anime_789b8b0e' // Source: ..\\plugins\\anime.js (mode: 'client')
@@ -153,7 +152,6 @@ async function createApp(ssrContext) {
   if (typeof nuxt_plugin_nuxticons_58181203 === 'function') await nuxt_plugin_nuxticons_58181203(app.context, inject)
 
   if (process.client) {
-    if (typeof nuxt_plugin_swplugin_767f597e === 'function') await nuxt_plugin_swplugin_767f597e(app.context, inject)
     if (typeof nuxt_plugin_aos_5e4622cf === 'function') await nuxt_plugin_aos_5e4622cf(app.context, inject)
     if (typeof nuxt_plugin_anime_789b8b0e === 'function') await nuxt_plugin_anime_789b8b0e(app.context, inject)
     if (typeof nuxt_plugin_mouseparallax_44300f22 === 'function') await nuxt_plugin_mouseparallax_44300f22(app.context, inject)

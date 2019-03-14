@@ -12,7 +12,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#f9f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#f9f7f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
         </div>
-        <div class="image-holder rellax" :data-rellax-speed="-6 * rellaxMulti">
+        <div class="image-holder">
           <div class="background"></div>
           <img :src="require('~/assets/Images/contact.png')" :data-src="require('~/assets/Images/contact.png')" >
         </div>
@@ -58,16 +58,15 @@ import charming from 'charming';
 export default {
   head() {
     return {
-      title: 'Contact • Réjon Taylor-Foster',
+      title: 'Get in Touch! ✦ Réjon Taylor-Foster',
       meta: [
-        {hid: 'description', name: 'description', content: "Get in Touch! Let's make something great together."}
+        {hid: 'description', name: 'description', content: "Like what you see? Let's make something great together."}
       ]
     }
   },
   data() {
     return {
-      animeStore: {},
-      rellaxMulti:  window.innerWidth <= 786 ? 1 : 0
+      animeStore: {}
     }
   },
   mounted() {
@@ -77,8 +76,6 @@ export default {
       this.$store.state.headerAnime.direction = "normal";
       this.$store.state.headerAnime.play();
     }
-
-    this.rellaxMulti = window.innerWidth <= 786 ? 1 : 0;
 
     let page = this.$el.querySelector('.contact');
     let behindText = page.querySelector('.behind-text');

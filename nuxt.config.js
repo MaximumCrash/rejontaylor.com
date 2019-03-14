@@ -8,11 +8,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Réjon Taylor-Foster',
+    title: 'Réjon Taylor-Foster ✦ Developer • Designer • All Around Mad Scientist',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Developer • Designer • All Around Mad Scientist'}
+      { hid: 'description', name: 'description', content: 'Everything you wanted to know about Réjon in one place.'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

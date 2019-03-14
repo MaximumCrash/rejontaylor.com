@@ -162,13 +162,12 @@ header > .links a::before {
     top: 50%;
     position: absolute;
     z-index: -10;
-    transform: translate(-50%, -50%) skew(0deg);
+    transform: translate(-50%, -50%) skew(-10deg);
     transition: all ease-out .2s;
   }
 
   header > .links a:hover::before {
     width: 120%; 
-    transform: translate(-50%, -50%) skew(-10deg);
     transition: all  cubic-bezier(0.165, 0.84, 0.44, 1) .1s;
   }
 
@@ -332,10 +331,12 @@ p {
        transition: all .32s cubic-bezier(0.075, 0.82, 0.165, 1);
      }
 
-     .scroll-up:not(.hide):hover {
-       transform: translateY(-15px);
-       transition: all .2s ease;
-     }
+    @media screen and (min-width: $breakPoint-tablet) {
+      .scroll-up:not(.hide):hover {
+        transform: translateY(-15px);
+        transition: all .2s ease;
+      }
+    }
 
 
 @media screen and (max-width: $breakPoint-tablet) and (min-width: $breakPoint-mobile) { 

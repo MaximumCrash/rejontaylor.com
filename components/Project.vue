@@ -83,23 +83,25 @@ export default {
                return el;
           })
           
-          this.animeStore.add({
-               targets: slides, 
-               translateX:['-120%','120%'],
-          skew: ['-16deg','-16deg'],
-          easing: 'easeOutExpo',
-          duration: 1632, 
-          delay: function(el, i) {
-            return 300 + 100 * i
-          }
+          slides.forEach((ele, index) => {
+
+
+
+               this.animeStore.add({
+                    targets: ele,
+                    translateX: ['-120%', '120%'],
+                    skew: ['-16deg', '-16deg'],
+                    easing: 'easeOutExpo',
+                    duration: 1200, 
+                    update: function(anim) {
+                         if (index == 0 && anim.progress > 30) {
+                              image.style.opacity = 1; 
+                         }
+                    }
+               }, 300 + 100 * index)
           })
-          .add({
-               targets: image, 
-               opacity: [0,1],
-          easing: 'easeOutQuart',
-          duration: 900
-          }, 408)
-          .add({
+
+          this.animeStore.add({
                targets: text,
                opacity: [0, 1],
         translateX: [64, 0],
@@ -222,7 +224,6 @@ export default {
           background-repeat: no-repeat;
           background-position: center; 
           background-attachment: fixed;
-          transition: all .2s ease;
           border-radius: 6px;
           z-index:0; 
      }
