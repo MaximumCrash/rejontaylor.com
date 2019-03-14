@@ -1,0 +1,46 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3689299, 2018-12-18T13:42:22-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Gibson-Bold by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/gibson/bold/
+ * 
+ * Webfont: Gibson-Regular by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/gibson/regular/
+ * 
+ * Webfont: Gibson-SemiBold by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/gibson/semi-bold/
+ * 
+ * Webfont: Gibson-Italic by Canada Type
+ * URL: https://www.myfonts.com/fonts/canadatype/gibson/italic/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3689299
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2011 Rod McDonald. Published by Canada Type. All rights reserved.
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/384b53");
+
+  
+@font-face {font-family: 'Gibson';src: url('webfonts/384B53_0_0.eot');src: url('webfonts/384B53_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/384B53_0_0.woff2') format('woff2'),url('webfonts/384B53_0_0.woff') format('woff'),url('webfonts/384B53_0_0.ttf') format('truetype'); font-weight: bold;}
+ 
+  
+@font-face {font-family: 'Gibson';src: url('webfonts/384B53_1_0.eot');src: url('webfonts/384B53_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/384B53_1_0.woff2') format('woff2'),url('webfonts/384B53_1_0.woff') format('woff'),url('webfonts/384B53_1_0.ttf') format('truetype'); font-weight: normal;}
+ 
+  
+@font-face {font-family: 'Gibson';src: url('webfonts/384B53_2_0.eot');src: url('webfonts/384B53_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/384B53_2_0.woff2') format('woff2'),url('webfonts/384B53_2_0.woff') format('woff'),url('webfonts/384B53_2_0.ttf') format('truetype'); font-weight: 600;}
+ 
+  
+@font-face {font-family: 'Gibson';src: url('webfonts/384B53_3_0.eot');src: url('webfonts/384B53_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/384B53_3_0.woff2') format('woff2'),url('webfonts/384B53_3_0.woff') format('woff'),url('webfonts/384B53_3_0.ttf') format('truetype'); font-style: italic;}
+ 

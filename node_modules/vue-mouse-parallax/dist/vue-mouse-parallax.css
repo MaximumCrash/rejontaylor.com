@@ -1,0 +1,10 @@
+
+.parallax-container[data-v-569ff987] {
+  perspective: 1000px;
+}
+
+.parallax-element[data-v-9f140bfc] {
+  transform-origin: center;
+  transition: all 2s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}

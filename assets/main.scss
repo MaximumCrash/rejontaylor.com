@@ -1,0 +1,40 @@
+/*
+Definitions and Such Go Here
+*/
+
+$black: #282A36;
+$white: #f9f7f4; 
+$red: #FB406F; 
+$blue: #3B88E4;
+$yellow: #FFC300; 
+
+$theme0: #5a04a2;
+$theme1: #884bd3;
+$theme2: #cc02ff;
+$theme3: #e4259b;
+$theme4: #df0077;
+
+$pageGradient: linear-gradient(to bottom, #08073f, #070635, #080728, #06061e, #020214);
+
+$pageDots-0: radial-gradient(rgba(251, 247, 240, 0.11) 6%, transparent 0);
+$dotSize-0: 60px 60px; 
+
+$pageDots-1: radial-gradient(rgba(251, 247, 240, 0.09) 5.9%, transparent 0);
+$dotSize-1: 40px 40px; 
+
+$pageDots-2: radial-gradient(rgba(251, 247, 240, 0.09) 5%, transparent 0);
+$dotSize-2: 23.5px 23.5px;
+
+$textShadow: #0101098a; 
+
+$breakPoint-tablet: 1290px; 
+$breakPoint-mobile: 786px; 
+
+.page-enter-active, .page-leave-active {
+     transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .25s;
+}
+
+.page-enter, .page-leave-active {
+     opacity: 0;
+     transform: translateY(40px);
+}
