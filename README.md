@@ -1,22 +1,6 @@
-# RTF_2019Site
+# Personal Site!
 
-> Rejonn&#39;s personal site
+> I built this using Nuxt.js, Vue, Anime.js, AOS, and Rellax. It took 30 days to make! (2 weeks of designing, 2 weeks of dev) 
 
-## Build Setup
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/feea7416-1228-443e-874b-7fa2132d6489/deploy-status)](https://app.netlify.com/sites/rejon-personal/deploys)
 
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
