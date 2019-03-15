@@ -59,7 +59,7 @@ module.exports = {
     '@nuxtjs/robots',
     ['@nuxtjs/sitemap', {
       path: '/sitemap.xml',
-      generate: false,
+      generate: true,
       routes: [
         '/',
         '/about',
