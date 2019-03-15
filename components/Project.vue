@@ -2,7 +2,7 @@
      <div :class="projectClass" data-aos="fade-up" data-aos-once="true" :data-aos-id="'project-' + index" data-aos-anchor-placement="top-bottom">
          
          <div class="heading" v-on:click="toggleProject">
-          <div class="title" >
+          <div :class="shouldShowTitle ? 'title' : 'title hide'">
               <h1 v-html="title"> </h1>
           </div>
           <div class="slides">
@@ -31,7 +31,7 @@
 import charming from 'charming';
 
 export default {
-     props:['index', 'title', 'image', 'content', 'link', 'bgPos'],
+     props:['index', 'title', 'image', 'content', 'link', 'bgPos', 'shouldShowTitle'],
      data() {
           return {
                    animeStore: {},
@@ -101,7 +101,8 @@ export default {
                }, 300 + 100 * index)
           })
 
-          this.animeStore.add({
+          if (window.innerWidth > 768) {
+               this.animeStore.add({
                targets: text,
                opacity: [0, 1],
         translateX: [64, 0],
@@ -111,6 +112,7 @@ export default {
           return 190 + 32 * i
         }
           }, 68)
+          }
           document.addEventListener('aos:in:' + 'project-' + this.index, ({detail}) => {
                this.animeStore.play();
           })
@@ -153,6 +155,11 @@ export default {
           transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
      }
 
+     .project.open .title {
+          opacity: 0;
+          transition: opacity .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+     }
+
      .title {
           color: $white; 
           position: absolute; 
@@ -160,7 +167,13 @@ export default {
           left: 10px; 
           text-align: left; 
           z-index: 2;
+          opacity: 1; 
           white-space: nowrap; 
+          transition: opacity .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+     }
+
+     .title.hide {
+          display: none;
      }
 
      .title h1 {
@@ -366,6 +379,11 @@ export default {
      }
 
      @media screen and (max-width: $breakPoint-mobile) {
+          .project.open .heading { 
+                  height: 35vh;
+          }
+
+
           .title h1 {
                /deep/ br { 
                display:block;
@@ -403,6 +421,7 @@ export default {
                text-align: center; 
                word-wrap: break-word;
                transform: translate(-50%, -50%);
+               display: none;
           }
 
           .title h1  {

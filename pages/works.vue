@@ -12,6 +12,7 @@
                  :content="project.content"
                  :index="index"
                  :bgPos="project.bgPos"
+                 :shouldShowTitle="project.shouldShowTitle"
                   />
       </div>
       <div :class="this.showScrollUp ? 'scroll-up' : 'scroll-up hide'" v-on:click="this.scrollToTop" >
