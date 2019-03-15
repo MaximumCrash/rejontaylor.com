@@ -290,7 +290,6 @@ export default {
     position: relative;
     margin-top: 2em;
     font-size: 1.9em;
-    pointer-events: all;
   }
 
   .quick-links > a {
@@ -299,7 +298,7 @@ export default {
     cursor:pointer; 
     text-decoration: none; 
     color: $white; 
-    pointer-events: all;
+    pointer-events: initial;
   }
 
   .quick-links > a::before {

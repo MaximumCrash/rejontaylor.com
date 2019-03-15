@@ -11,6 +11,7 @@
                  :image="project.image"
                  :content="project.content"
                  :index="index"
+                 :bgPos="project.bgPos"
                   />
       </div>
       <div :class="this.showScrollUp ? 'scroll-up' : 'scroll-up hide'" v-on:click="this.scrollToTop" >

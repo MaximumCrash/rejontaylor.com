@@ -12,7 +12,7 @@
                <div class="slide3"></div>
                <div class="slide4"></div>
           </div>
-          <div class="image" :style="{backgroundImage: `url(${image})`}"></div>
+          <div class="image" :style="{backgroundImage: `url(${image})`, backgroundPosition: bgPos}"></div>
           
           <div class="more-arrow left">
                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
@@ -31,7 +31,7 @@
 import charming from 'charming';
 
 export default {
-     props:['index', 'title', 'image', 'content', 'link'],
+     props:['index', 'title', 'image', 'content', 'link', 'bgPos'],
      data() {
           return {
                    animeStore: {},
@@ -228,7 +228,6 @@ export default {
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center; 
-          background-attachment: fixed;
           border-radius: 6px;
           z-index:0; 
      }
