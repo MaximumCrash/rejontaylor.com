@@ -56,7 +56,8 @@ module.exports = {
         'assets/main.scss'
       ]
     ],
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap'
   ],
 
   /*
