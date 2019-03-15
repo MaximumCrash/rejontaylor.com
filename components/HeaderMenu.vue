@@ -1,5 +1,6 @@
 <template>
   <div :class="open ? 'header-menu open' : 'header-menu'">
+       <div :class="showFader ? 'fader' : 'fader hide'"></div>
        <div class="back-closer" @mouseup="closeMenu"></div>
        <div class="icon" @click="toggleMenu">
             <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -20,7 +21,8 @@
           props:['activePage'],
           data() {
                return {
-                    open: false
+                    open: false,
+                    showFader: false
                }
           },
           methods: {
@@ -38,7 +40,19 @@
                }
           },
           mounted() {
-               window.addEventListener('scroll', () => this.closeMenu())
+               window.addEventListener('scroll', () => {
+                    if (this.open) {
+                         this.closeMenu();
+                    }
+                    
+                    if (this.activePage.page === 'works') {
+                         this.showFader = window.scrollY > window.innerHeight * .3;
+                    }
+                    else {
+                         this.showFader = window.scrollY > window.innerHeight;
+                    }
+                    
+               })
           },
           beforeDestroy() {
                window.removeEventListener('scroll', () => this.closeMenu())
@@ -75,8 +89,8 @@
      width: 14vw; 
      padding: 0vw;
      margin: auto; 
-     margin-top: 16px; 
-     margin-right: 16px; 
+     margin-top: 8px; 
+     margin-right: 8px; 
      max-height: 46px; 
      max-width: 46px; 
      min-width:42px;
@@ -178,9 +192,28 @@
      transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 
+.header-menu .fader {
+         height: 20vh;
+         max-height: 120px;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to bottom, #08073f, #02021400);
+    left: 0;
+    opacity: 1; 
+    z-index: -10;
+    transform: translateY(0%);
+    transition: all .2s ease;
+}
+
+.header-menu .fader.hide {
+     opacity: 0; 
+     transform: translateY(-100%);
+     transition: all .2s ease;
+}
+
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
      .header-menu .links .backdrop {
-          background: rgba(5, 5, 27, 0.85);
+          background: rgba(5, 5, 27, 0.4);
           -webkit-backdrop-filter: blur(2em);
           backdrop-filter: blur(2em);
      }

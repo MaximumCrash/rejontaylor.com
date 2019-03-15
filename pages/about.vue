@@ -14,7 +14,7 @@
           </div>
         <div class="image-holder">
           <div class="background"></div>
-          <img  :src="require('~/assets/Images/about.png')" :data-src="require('~/assets/Images/about.png')">
+          <img  :src="'/Images/about.png'" :data-src="'/Images/about.png'">
           
         </div>
         <div class="mobile-only scroll-cta">
@@ -24,11 +24,11 @@
       <p class="copy">
         I'm Réjon, a multifaceted developer-designer captivated with envisioning unforgettable experiences. 
         <br><br> 
-        My specialties lie in UX/UI Design and Game Development. My experience stretches from <a class="proof" href="http://dailybreak.com" target="_blank"> content platforms</a> and <a class="proof" href="https://volunteerscience.com/" target="_blank"> data experiments</a> to <a class="proof" href="https://www.wsj.com/articles/when-children-can-benefit-from-playing-videogames-1500321670" target="_blank"> children's health solutions</a> and <a class="proof" href="https://worcester.ma/2016/09/free-to-read-bravehearts-derby-app-a-blast-for-fans-home-run-for-massdigi-developers/" target="_blank">brand management</a>.
+        My specialties lie in UX/UI Design and Game Development. My experience stretches from <a class="proof" href="http://dailybreak.com" target="_blank" rel='noopener'> content platforms</a> and <a class="proof" href="https://volunteerscience.com/" target="_blank" rel='noopener' > data experiments</a> to <a class="proof" href="https://www.wsj.com/articles/when-children-can-benefit-from-playing-videogames-1500321670" target="_blank" rel='noopener'> children's health solutions</a> and <a class="proof" href="https://worcester.ma/2016/09/free-to-read-bravehearts-derby-app-a-blast-for-fans-home-run-for-massdigi-developers/" target="_blank" rel='noopener'>brand management</a>.
         <br><br>
         Because I design with my Mom in mind, accessibility and enjoyment are at the forefront of everything I make.
         <br><br>
-        In my spare time, I run <a href="https://maximumcrash.com">Maximum Crash</a>, compose music, fix hardware, teach, and explore fashion design. 
+        In my spare time, I run <a href="https://maximumcrash.com" target="_blank" rel='noopener' >Maximum Crash</a>, compose music, fix hardware, teach, and explore fashion design. 
         <br><br>
         <a href="/Rejon_Resume_2019.pdf" target="_blank">My Resume</a>
 
@@ -116,7 +116,8 @@ export default {
 
     this.animeStore = this.$anime.timeline({loop: false, autoplay: true});
 
-    this.animeStore.add({
+    if (window.innerWidth > 786) {
+      this.animeStore.add({
         targets: behindText,
         opacity: [0, 1],
         color: ["#f9f7f4","#1e1d69"],
@@ -126,7 +127,10 @@ export default {
         delay: function(el, i) {
           return 520 + 64 * i
         },
-      }, '-=640').add({
+      }, '-=640')
+    }
+
+    this.animeStore.add({
         targets: profileBackChars,
         opacity: [0, 1],
         translateX: [64, 0],

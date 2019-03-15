@@ -2,8 +2,8 @@
      <div :class="projectClass" data-aos="fade-up" data-aos-once="true" :data-aos-id="'project-' + index" data-aos-anchor-placement="top-bottom">
          
          <div class="heading" v-on:click="toggleProject">
-          <div class="title">
-              <h1> {{title}} </h1>
+          <div class="title" >
+              <h1 v-html="title"> </h1>
           </div>
           <div class="slides">
                <div class="slide0"></div>
@@ -160,12 +160,17 @@ export default {
           left: 10px; 
           text-align: left; 
           z-index: 2;
+          white-space: nowrap; 
      }
 
      .title h1 {
           font-size: 3.64em;
-          // text-shadow: 0 11px 25px rgba(11, 11, 61, 0.61);
-              text-shadow: 0 6px 9px #0b0b3d6b, -1px 0 rgba(11, 11, 61, 0.5), 0 1px rgba(11, 11, 61, 0.5), 1px 0 rgba(11, 11, 61, 0.5), 0 -1px rgba(11, 11, 61, 0.5);
+          
+          text-shadow: 0 6px 9px rgba(11, 11, 61, 0.7), -1px 0 rgba(11, 11, 61, 0.7), 0 1px rgba(11, 11, 61, 0.7), 1px 0 rgba(11, 11, 61, 0.7), 0 -1px rgba(11, 11, 61, 0.7);
+     
+          /deep/ br { 
+               display:none;
+          }
      }
 
      
@@ -227,6 +232,7 @@ export default {
           border-radius: 6px;
           z-index:0; 
      }
+
 
      .more-arrow {
           position: absolute;
@@ -361,6 +367,12 @@ export default {
      }
 
      @media screen and (max-width: $breakPoint-mobile) {
+          .title h1 {
+               /deep/ br { 
+               display:block;
+          }
+          }          
+
            .project:not(.open) .heading:hover .more-arrow.left,
      .project:not(.open) .heading:hover .more-arrow.right {
           opacity: 0;

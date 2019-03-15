@@ -51,7 +51,7 @@ export default {
       charming(element);
       element.style.opacity = 1; 
       let target = element.querySelectorAll('span');
-      target[0].innerText += 'e'; //Cheat for getting swish on first letter
+      target[0].innerText += 'é'; //Cheat for getting swish on first letter
       
       
       firstNameLetters.push(target);
@@ -230,6 +230,10 @@ export default {
     left: -60px; 
   }
 
+  .home .multi.title > h1 > span:nth-child(2) {
+    visibility: hidden;
+  }
+
   .home .multi.title > h2 {
     color: $white; 
     font-size: 2.25em; 
@@ -295,6 +299,7 @@ export default {
     cursor:pointer; 
     text-decoration: none; 
     color: $white; 
+    pointer-events: all;
   }
 
   .quick-links > a::before {

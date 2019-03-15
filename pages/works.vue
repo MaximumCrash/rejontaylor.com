@@ -72,17 +72,19 @@ export default {
 
     this.animeStore = this.$anime.timeline({loop: false, autoplay: true});
 
-    this.animeStore.add({
+    if (window.innerWidth > 786) {
+      this.animeStore.add({
         targets: behindText,
         opacity: [0, 1],
-        color: ["#ffffff","#1e1d69"],
+        color: ["#f9f7f4","#1e1d69"],
         translateX: [64, 0],
         easing: 'easeOutQuart',
         duration: 900,
         delay: function(el, i) {
-          return 164 * i
+          return 520 + 64 * i
         },
-      }, 0)     
+      }, '-=640')
+    }  
   },
   beforeDestroy() {
     window.onscroll = null; 
@@ -116,7 +118,7 @@ export default {
   position: relative; 
   width: 100%; 
   max-width: 1052px;
-  padding-top: 6vh;
+  padding-top: 5vh;
 }
 
 .works h1.behind-text {

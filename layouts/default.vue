@@ -96,6 +96,10 @@ export default {
 
 <style lang="scss">
 @import '~/assets/main.scss';
+
+* {
+  -webkit-overflow-scrolling:  touch; 
+}
 .app {
   position: relative; 
   background: $pageGradient;
@@ -284,6 +288,11 @@ p {
   font-family: 'Gibson';
 }
 
+.nuxt-progress {
+  background: linear-gradient(to right, $theme0, $theme1, $theme2, $theme3, $theme4) !important; 
+  height: 4px !important;
+}
+
 *,
 *:before,
 *:after {
@@ -368,6 +377,20 @@ p {
     pointer-events: none; 
   }
 
+  header h2 {
+    font-size: 2.64em;
+  }
+
+  header h2 span:first-of-type {
+    left: 27px;
+  }
+
+  header > a {
+    position: relative; 
+    left: -5px; 
+    top: -5px;
+    z-index: 10;
+  }
   
 }
 

@@ -14,7 +14,7 @@
         </div>
         <div class="image-holder">
           <div class="background"></div>
-          <img :src="require('~/assets/Images/contact.png')" :data-src="require('~/assets/Images/contact.png')" >
+          <img :src="'/Images/contact.png'" :data-src="'/Images/contact.png'" >
         </div>
         <div class="mobile-only scroll-cta">
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#f9f7f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs"><path d="M6 9l6 6 6-6"/></svg>
@@ -28,22 +28,22 @@
         <ul class="socialLinks">
           <li>
             <a href="https://www.linkedin.com/in/rtaylorfoster/" target="_blank">
-              <img src="~/assets/Images/linkedIn_contact.svg"/>
+              <img src="/Images/linkedIn_contact.svg"/>
             </a>
           </li>
           <li>
             <a href="https://twitter.com/Maximum_Crash" target="_blank">
-              <img src="~/assets/Images/twitter_contact.svg"/>
+              <img src="/Images/twitter_contact.svg"/>
             </a>
           </li>
           <li>
             <a href="https://archive.maximumcrash.com/" target="_blank">
-              <img src="~/assets/Images/archive_contact.svg"/>
+              <img src="/Images/archive_contact.svg"/>
             </a>
           </li>
           <li>
             <a href="https://maximumcrash.com/" target="_blank">
-              <img src="~/assets/Images/crash_contact.svg"/>
+              <img src="/Images/crash_contact.svg"/>
             </a>
           </li>
         </ul>
@@ -108,7 +108,8 @@ export default {
 
     this.animeStore = this.$anime.timeline({loop: false, autoplay: true});
 
-    this.animeStore.add({
+    if (window.innerWidth > 786) {
+      this.animeStore.add({
         targets: behindText,
         opacity: [0, 1],
         color: ["#f9f7f4","#1e1d69"],
@@ -118,7 +119,10 @@ export default {
         delay: function(el, i) {
           return 520 + 64 * i
         },
-      }, '-=640').add({
+      }, '-=640')
+    }
+
+    this.animeStore.add({
         targets: profileBackChars,
         opacity: [0, 1],
         translateX: [64, 0],
