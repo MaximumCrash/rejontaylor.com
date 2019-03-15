@@ -59,9 +59,9 @@ module.exports = {
     '@nuxtjs/robots',
     ['@nuxtjs/sitemap', {
       path: '/sitemap.xml',
+      hostname: 'https://rejontaylor.com',
       generate: true,
       routes: [
-        '/',
         '/about',
         '/works',
         '/contact'
