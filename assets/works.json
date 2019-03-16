@@ -4,7 +4,7 @@
                "title": "Dailybreak.com",
                "shouldShowTitle": true, 
                "image": "/Images/Projects/dailybreak.jpg",
-               "content": "<h2>Dailybreak.com</h2><h3>Roles: Front End Developer • UX/UI Designer</h3> <p>Dailybreak is a content platform filled with listcles, quizzes, and games that aim to get users to procrastinate with purpose. The site gamifies content engagement by rewarding points that can be used to enter sweepstakes or purchase rewards.</p><p>Check it out <a href='https://www.dailybreak.com' rel='noopener' target='_blank'>here</a>.</p> <p>See a more in-depth case on <a href='https://archive.maximumcrash.com' rel='noopener' target='_blank'>my archive</a>.</p>"
+               "content": "<h2>Dailybreak.com</h2><h3>Roles: Front End Developer • UX/UI Designer</h3> <p>Dailybreak is a content platform filled with listcles, quizzes, and games that aim to get users to procrastinate with purpose. The site gamifies content engagement by rewarding points that can be used to enter sweepstakes or purchase rewards.</p><p>Check it out <a href='https://www.dailybreak.com' rel='noopener' target='_blank'>here (Dailybreak.com)</a>.</p> <p>See a more in-depth case on <a href='https://archive.maximumcrash.com' rel='noopener' target='_blank'>my archive</a>.</p>"
           },
           {
                "title": "Dead Drop </br>Desperado",
@@ -29,13 +29,13 @@
                "title": "Lotto' Boxes",
                "image": "/Images/Projects/lottoboxes.png",
                "shouldShowTitle": false, 
-               "content": "<h2>Lotto' Boxes</h2><h3>Role: UX Designer</h3> <p>Lotto' Boxes is an educational mobile app that teaches kids about income inequality. Players aim to pay their rent on time and work towards the possiblity of a better life. It was made for the Silicon Valley Community Foundation and launched at their annual foundation event in San Francisco.</p><p>Check it out <a href='https://petricoregames.com/client-work/lotto-boxes/'  rel='noopener' target='_blank'>here</a>.</p> <p>See a more in-depth case on <a href='https://archive.maximumcrash.com/lotto-boxes'  rel='noopener' target='_blank'>my archive</a>.</p>"
+               "content": "<h2>Lotto' Boxes</h2><h3>Role: UX Designer</h3> <p>Lotto' Boxes is an educational mobile app that teaches kids about income inequality. Players aim to pay their rent on time and work towards the possiblity of a better life. It was made for the Silicon Valley Community Foundation and launched at their annual foundation event in San Francisco.</p><p>Check it out <a href='https://petricoregames.com/client-work/lotto-boxes/'  rel='noopener' target='_blank'>here (Petricore Project Page)</a>.</p> <p>See a more in-depth case on <a href='https://archive.maximumcrash.com/lotto-boxes'  rel='noopener' target='_blank'>my archive</a>.</p>"
           },
           {
                "title": "",
                "image": "/Images/Projects/archive.png",
                "shouldShowTitle": false, 
-               "content": "<h3>I've worked on a lot more stuff!</h3><p>Some finished, some not, but if you wanted to delve deeper I've got an entire archive of experiments and projects <a href='https://archive.maximumcrash.com'  rel='noopener' target='_blank'>here</a>.</p>"
+               "content": "<h3>I've worked on a lot more stuff!</h3><p>Some finished, some not, but if you wanted to delve deeper I've got an entire archive of experiments and projects on <a href='https://archive.maximumcrash.com'  rel='noopener' target='_blank'>my archive</a>.</p>"
           }
      ]
 }

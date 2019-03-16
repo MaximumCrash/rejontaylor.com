@@ -27,22 +27,22 @@
         </br></br>
         <ul class="socialLinks">
           <li>
-            <a href="https://www.linkedin.com/in/rtaylorfoster/" target="_blank">
+            <a href="https://www.linkedin.com/in/rtaylorfoster/" rel="noopener" target="_blank">
               <img src="/Images/linkedIn_contact.svg"/>
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/Maximum_Crash" target="_blank">
+            <a href="https://twitter.com/Maximum_Crash" rel="noopener" target="_blank">
               <img src="/Images/twitter_contact.svg"/>
             </a>
           </li>
           <li>
-            <a href="https://archive.maximumcrash.com/" target="_blank">
+            <a href="https://archive.maximumcrash.com/" rel="noopener" target="_blank">
               <img src="/Images/archive_contact.svg"/>
             </a>
           </li>
           <li>
-            <a href="https://maximumcrash.com/" target="_blank">
+            <a href="https://maximumcrash.com/" rel="noopener" target="_blank">
               <img src="/Images/crash_contact.svg"/>
             </a>
           </li>

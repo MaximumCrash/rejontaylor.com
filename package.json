@@ -26,16 +26,22 @@
     "vue-mouse-parallax": "^0.9.2"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.1.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-prettier": "2.6.2",
+    "image-webpack-loader": "^4.6.0",
+    "install": "^0.12.2",
     "jest": "^23.6.0",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
+    "npm": "^6.9.0",
     "prettier": "1.14.3",
+    "responsive-loader": "^1.2.0",
     "sass-loader": "^7.1.0",
+    "sharp": "^0.21.3",
     "vue-jest": "^3.0.2"
   }
 }

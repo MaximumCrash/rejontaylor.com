@@ -315,6 +315,15 @@ p {
   display: none; 
 }
 
+.page-enter-active, .page-leave-active {
+     transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .25s;
+}
+
+.page-enter, .page-leave-active {
+     opacity: 0;
+     transform: translateY(40px);
+}
+
  .scroll-up {
        position: fixed; 
        width: 60px; 
