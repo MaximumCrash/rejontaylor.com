@@ -14,7 +14,7 @@
         </div>
         <div class="image-holder">
           <div class="background"></div>
-          <img :src="'/Images/contact.png'" :data-src="'/Images/contact.png'" >
+          <img :src="'/Images/contact.png'" :data-src="'/Images/contact.png'" alt="Rejon sliding in to request a call">
         </div>
         <div class="mobile-only scroll-cta">
           <svg xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="#f9f7f4" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs"><path d="M6 9l6 6 6-6"/></svg>

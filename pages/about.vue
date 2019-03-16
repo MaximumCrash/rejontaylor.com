@@ -14,7 +14,7 @@
           </div>
         <div class="image-holder">
           <div class="background"></div>
-          <img  :src="'/Images/about.png'" :data-src="'/Images/about.png'">
+          <img  :src="'/Images/about.png'" :data-src="'/Images/about.png'" alt="Rejon sliding in to say hello">
           
         </div>
         <div class="mobile-only scroll-cta">

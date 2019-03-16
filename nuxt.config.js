@@ -66,7 +66,21 @@ module.exports = {
         '/works',
         '/contact'
       ]
-    }]
+    }],
+    [
+    'nuxt-netlify-http2-server-push',
+    {
+      // Specify relative path to the dist directory and its content type
+      resources: [
+        { path: '**/*.js', as: 'script' },
+        { path: 'fonts/*.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' },
+        { path: 'fonts/*.otf', as: 'font', type: 'font/otf', crossorigin: 'anonymous' },
+        { path: 'fonts/webfonts/*.woff2', as: 'font', type: 'font/woff2', crossorigin: 'anonymous' },
+        { path: 'fonts/webfonts/*.ttf', as: 'font', type: 'font/ttf', crossorigin: 'anonymous' },
+        { path: 'fonts/webfonts/*.eot', as: 'font', type: 'font/eot', crossorigin: 'anonymous' },
+      ]
+    }
+  ]
   ],
 
   /*
