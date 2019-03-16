@@ -85,6 +85,14 @@ export default {
 
     this.$store.commit('setAnime', headerAnime);
   },
+  updated() {
+    if (this.$store.state.headerAnime !== null && this.page === "index" && this.$store.state.oldPage !== "index") 
+    {
+      if (this.$store.state.headerAnime.direction === 'normal') {
+        this.hideHeader();
+      }
+    }
+  },
   methods: {
     hideHeader() {
       this.$store.state.headerAnime.direction = "reverse";
