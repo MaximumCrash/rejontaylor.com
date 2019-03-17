@@ -20,13 +20,13 @@ module.exports = {
       { property: 'og:title', content:'Réjon Taylor-Foster | Developer ✦ Designer ✦ All Around Mad Scientist'},
       { property: 'og:type', content: 'website'},
       { property: 'og:description', content: 'Everything you wanted to know about Réjon in one place.'},
-      { property: 'og:image', content: 'https://maximumarchive.cdn.prismic.io/maximumarchive/3b63c7c412143cff12918c59a1d42da23590ea2d_personal-twitter-card.png'},
-      { property: 'og:url', content: 'https://archive.maximumcrash.com'},
+      { property: 'og:image', content: 'https://rejontaylor.com/Images/personal-twitter-card.png'},
+      { property: 'og:url', content: 'https://rejontaylor.com'},
       { name: 'twitter:card', content:'summary_large_image'},
       { name: 'twitter:site', content:'@Maximum_Crash'},
       { name: 'twitter:title', content: 'Réjon Taylor-Foster'},
       { name: 'twitter:description', content: 'Developer ✦ Designer ✦ All Around Mad Scientist'},
-      { name: 'twitter:image', content: 'https://maximumarchive.cdn.prismic.io/maximumarchive/3b63c7c412143cff12918c59a1d42da23590ea2d_personal-twitter-card.png'},
+      { name: 'twitter:image', content: 'https://rejontaylor.com/Images/personal-twitter-card.png'},
       { name: 'twitter:image:alt', content: 'Réjon Taylor-Foster'}
     ],
     link: [
