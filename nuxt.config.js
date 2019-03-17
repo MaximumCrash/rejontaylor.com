@@ -95,7 +95,18 @@ module.exports = {
         { path: 'fonts/webfonts/*.eot', as: 'font', type: 'font/eot', crossorigin: 'anonymous' },
       ]
     }
-  ]
+  ],
+  ['nuxt-social-meta', {
+    url: 'https://rejontaylor.com',
+    title: 'Réjon Taylor-Foster | Developer ✦ Designer ✦ All Around Mad Scientist',
+    description: 'Everything you wanted to know about Réjon in one place.',
+    img: 'https://rejontaylor.com/Images/personal-twitter-card.png',
+    locale: 'en-US',
+    twitter: '@maximum_crash',
+    background_color: '#e4259b',
+    theme_color: "#08073f",
+
+  }]
   ],
   manifest: {
     "name": "Réjon Taylor-Foster | Developer ✦ Designer ✦ All Around Mad Scientist",
@@ -103,7 +114,8 @@ module.exports = {
     "start_url": "/",
     "background_color": "#08073f",
     "display": "standalone",
-    "theme_color": "#e4259b"
+    "theme_color": "#e4259b",
+    description:"Everything you wanted to know about Réjon in one place."
   },
 
   /*
