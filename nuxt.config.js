@@ -97,6 +97,14 @@ module.exports = {
     }
   ]
   ],
+  manifest: {
+    "name": "Réjon Taylor-Foster | Developer ✦ Designer ✦ All Around Mad Scientist",
+    "short_name": "Réjon Taylor-Foster",
+    "start_url": "/",
+    "background_color": "#08073f",
+    "display": "standalone",
+    "theme_color": "#e4259b"
+  },
 
   /*
   ** Build configuration
