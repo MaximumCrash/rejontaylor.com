@@ -379,6 +379,11 @@ export default {
      }
 
      @media screen and (max-width: $breakPoint-mobile) {
+          .project:not(.open) .heading:hover {
+               transform: translateY(0px);
+          box-shadow: 0 0px 0px hsla(250, 81%, 5%, 0.33), 0 0px 0px hsla(250, 81%, 5%, 0.33);
+          }
+
           .project.open .heading { 
                   height: 35vh;
           }
