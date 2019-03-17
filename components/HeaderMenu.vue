@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import debounce from 'lodash.debounce';
+
      export default {
           props:['activePage'],
           data() {
@@ -40,7 +42,7 @@
                }
           },
           mounted() {
-               window.addEventListener('scroll', () => {
+               window.addEventListener('scroll', debounce(() => {
                     if (this.open) {
                          this.closeMenu();
                     }
@@ -52,7 +54,7 @@
                          this.showFader = window.scrollY > window.innerHeight;
                     }
                     
-               })
+               }, 100))
           },
           beforeDestroy() {
                window.removeEventListener('scroll', () => this.closeMenu())

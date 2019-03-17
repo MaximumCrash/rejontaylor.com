@@ -48,6 +48,7 @@
 
 <script>
 import charming from 'charming';
+import debounce from 'lodash.debounce';
 
 export default {
   head() {
@@ -80,9 +81,9 @@ export default {
       this.$store.state.headerAnime.play();
     }
 
-    window.onscroll = () => {
+    window.onscroll = debounce(() => {
         this.showScrollUp = window.scrollY > window.innerHeight; 
-    }
+    }, 100); 
 
     let page = this.$el.querySelector('.about');
     let behindText = page.querySelector('.behind-text');

@@ -26,6 +26,7 @@
 import charming from 'charming';
 import Project from '~/components/Project.vue';
 import Projects from '~/assets/works.json';
+import debounce from 'lodash.debounce';
 
 export default {
   head() {
@@ -61,9 +62,9 @@ export default {
       this.$store.state.headerAnime.play();
     }
 
-    window.onscroll = () => {
+    window.onscroll = debounce(() => {
         this.showScrollUp = window.scrollY > window.innerHeight; 
-    }
+    }, 100); 
 
     let page = this.$el.querySelector('.works');
     let behindText = page.querySelector('.behind-text');
