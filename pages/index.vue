@@ -35,32 +35,6 @@ export default {
       animeStore: {}
     }
   },
-  head: {
-    title: 'Réjon Taylor-Foster | Developer ✦ Designer ✦ All Around Mad Scientist',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Everything you wanted to know about Réjon in one place.'},
-      { hid: 'robots', name: 'robots', content: 'all' },
-      { hid: 'keywords', name: 'keywords', content: 'rejon, rejon taylor-foster, maximum crash, portfolio'},
-      { hid: 'theme-color', name: 'theme-color', content: '#08073f'},
-      {hid: 'og:site_name', property: 'og:site_name',content: 'Réjon Taylor-Foster'},
-      {hid: 'og:title', property: 'og:title', content:'Réjon Taylor-Foster | Developer ✦ Designer ✦ All Around Mad Scientist'},
-      {hid: 'og:type', property: 'og:type', content: 'website'},
-      {hid: 'og:description', property: 'og:description', content: 'Everything you wanted to know about Réjon in one place.'},
-      {hid: 'og:image', property: 'og:image', content: 'https://rejontaylor.com/Images/personal-twitter-card.png'},
-      {hid: 'og:url', property: 'og:url', content: 'https://rejontaylor.com'},
-      {hid: 'twitter:card', name: 'twitter:card', content:'summary_large_image'},
-      {hid: 'twitter:site', name: 'twitter:site', content:'@Maximum_Crash'},
-      {hid: 'twitter:title', name: 'twitter:title', content: 'Réjon Taylor-Foster'},
-      {hid: 'twitter:description', name: 'twitter:description', content: 'Developer ✦ Designer ✦ All Around Mad Scientist'},
-      {hid: 'twitter:image', name: 'twitter:image', content: 'https://rejontaylor.com/Images/personal-twitter-card.png'},
-      {hid: 'twitter:image:alt', name: 'twitter:image:alt', content: 'Réjon Taylor-Foster'}
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
   mounted() {
     
     //Define possible animations~!
