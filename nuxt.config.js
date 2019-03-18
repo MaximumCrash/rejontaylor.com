@@ -18,16 +18,15 @@ module.exports = {
       { hid: 'theme-color', name: 'theme-color', content: '#08073f'},
       {property: 'og:site_name',content: 'Réjon Taylor-Foster'},
       {property: 'og:title', content:'Réjon Taylor-Foster | Developer ✦ Designer ✦ All Around Mad Scientist'},
-      {property: 'og:type', content: 'website'},
       { property: 'og:description', content: 'Everything you wanted to know about Réjon in one place.'},
       { property: 'og:image', content: 'https://rejontaylor.com/Images/personal-twitter-card.png'},
       { property: 'og:url', content: 'https://rejontaylor.com'},
-      {property: 'twitter:card', content:'summary_large_image'},
-      { property: 'twitter:site', content:'@Maximum_Crash'},
-      { property: 'twitter:title', content: 'Réjon Taylor-Foster'},
-      {property: 'twitter:description', content: 'Developer ✦ Designer ✦ All Around Mad Scientist'},
-      { property: 'twitter:image', content: 'https://rejontaylor.com/Images/personal-twitter-card.png'},
-      { property: 'twitter:image:alt', content: 'Réjon Taylor-Foster'}
+      {name: 'twitter:card', content:'summary_large_image'},
+      { name: 'twitter:site', content:'@Maximum_Crash'},
+      { name: 'twitter:title', content: 'Réjon Taylor-Foster'},
+      {name: 'twitter:description', content: 'Developer ✦ Designer ✦ All Around Mad Scientist'},
+      { name: 'twitter:image', content: 'https://rejontaylor.com/Images/personal-twitter-card.png'},
+      { name: 'twitter:image:alt', content: 'Réjon Taylor-Foster'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
