@@ -13,6 +13,7 @@
     "netlify": "nuxt build && nuxt start"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.14",
     "@nuxtjs/robots": "^2.0.0",
     "@nuxtjs/sitemap": "^0.2.2",
     "aos": "^3.0.0-beta.6",

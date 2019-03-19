@@ -64,6 +64,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/pwa',
     ['nuxt-sass-resources-loader',
       [
         'assets/main.scss'
