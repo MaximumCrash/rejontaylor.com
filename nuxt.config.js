@@ -14,7 +14,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Everything you wanted to know about Réjon in one place.'},
       { hid: 'robots', name: 'robots', content: 'all' },
-      { hid: 'keywords', name: 'keywords', content: 'rejon, rejon taylor-foster, maximum crash, portfolio'},
+      { hid: 'keywords', name: 'keywords', content: 'Réjon, Réjon Taylor-Foster, rejon, rejon taylor-foster, maximum crash'},
       { hid: 'theme-color', name: 'theme-color', content: '#08073f'},
       {property: 'og:site_name',content: 'Réjon Taylor-Foster'},
       {property: 'og:title', content:'Réjon Taylor-Foster | Developer ✦ Designer ✦ All Around Mad Scientist'},
