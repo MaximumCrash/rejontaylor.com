@@ -58,7 +58,7 @@ import charming from 'charming';
 export default {
   head() {
     return {
-      title: 'Get in Touch! ✦ Réjon Taylor-Foster',
+      title: 'Get in Touch With Me! ✦ Réjon Taylor-Foster',
       meta: [
         {hid: 'description', name: 'description', content: "Like what you see? Let's make something great together."}
       ]
